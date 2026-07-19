@@ -1,45 +1,6 @@
--- ====================================================================================
--- Developer: ___Miles Johnson___
--- Date: 02/25/2026
--- Assignment: Homework #4
--- Due Date: 03/02/2026
--- ====================================================================================
 
--- ====================================================================================
--- this statement will change the database to YOUR database.
-USE MJOHN309
--- ====================================================================================
-
--- ====================================================================================
--- this statement will prevent messages of "(1 row(s) affected)"
 SET NOCOUNT ON
--- ====================================================================================
 
--- ====================================================================================
--- NOTES FOR ALL USERS:
--- Note: When you see a -- (dash-dash) the line is commented.
--- Note: When you see a block of code surrounded by /* */ all that code is commented.
--- ====================================================================================
-
--- ====================================================================================
--- NOTES FOR SQL SERVER MANAGEMENT STUDIO USERS ONLY:
--- Note: If you'd like to see your results in text format (not grid),
--- press CTRL+T and run your script.
--- Note: If you want to get back to the grid format, press CTRL+D
--- ====================================================================================
-
--- ====================================================================================
--- NOTES FOR AZURE DATA STUDIO and VISUAL STUDIO CODE USERS:
--- Note: There's not a straight forward way to see your results text mode instead of
--- grid.
--- ====================================================================================
-
--- ====================================================================================
--- START CreateTablesForHomeworks
--- ====================================================================================
-
--- ====================================================================================
--- drop foreign keys
 -- ====================================================================================
 
 IF OBJECT_ID('FK_Show_Director') IS NOT NULL
@@ -332,10 +293,7 @@ INSERT INTO Viewing (ViewerID, PlatformID, ShowID, WatchDateTime, ViewerRatingSt
 INSERT INTO Viewing (ViewerID, PlatformID, ShowID, WatchDateTime, ViewerRatingStars) VALUES (5, 2, 2, '03/02/2026 04:01:13', 5)
 
 
--- ====================================================================================
--- Select all the data from all the tables, being sure to use an alias that 
--- makes sense for each statement
--- ====================================================================================
+
 SELECT *
 FROM Genre g
 
@@ -365,9 +323,3 @@ FROM Role r
 
 SELECT *
 FROM Viewing vw
-
-
-
--- ====================================================================================
--- END CreateTablesForHomeworks
--- ====================================================
